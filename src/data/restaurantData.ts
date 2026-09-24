@@ -21,25 +21,25 @@ export interface Review {
 }
 
 export const RESTAURANT_INFO = {
-  name: "Farmers Kitchen",
-  locationTagline: "Dine-in: Surajpur, Greater Noida | Express Delivery: Sector 73, Noida",
-  phone: "+91 97171 76252",
-  phoneRaw: "9717176252",
-  instagram: "@farmerskitchennoida",
+  name: "Kitchen369",
+  locationTagline: "Dine-in: Beta 1, Greater Noida | Express Delivery: Alpha 1, Greater Noida",
+  phone: "+91 98765 36900",
+  phoneRaw: "9876536900",
+  instagram: "@kitchen369.official",
   cuisines: ["North Indian", "Chinese", "Tandoor"],
   primaryColor: "#5C1600",
   hours: "11:00 AM - 11:30 PM (Mon - Sun)",
-  dineInAddress: "Surajpur, Greater Noida, UP",
-  deliveryAddress: "Sector 73, Noida, UP",
-  zomatoUrl: "https://www.zomato.com/noida/farmers-kitchen",
-  swiggyUrl: "https://www.swiggy.com/restaurants/farmers-kitchen-sector-73-noida",
+  dineInAddress: "Beta 1, Greater Noida, UP",
+  deliveryAddress: "Alpha 1, Greater Noida, UP",
+  zomatoUrl: "https://www.zomato.com/noida/kitchen369",
+  swiggyUrl: "https://www.swiggy.com/restaurants/kitchen369-greater-noida",
 };
 
 export const MENU_ITEMS: MenuItem[] = [
   // Starters & Kebabs
   {
     id: "st-1",
-    name: "Farmers Special Paneer Malai Tikka",
+    name: "Kitchen369 Special Paneer Malai Tikka",
     category: "starters",
     price: 340,
     description: "Cottage cheese marinated in rich cream, cashew paste, cardamom & char-grilled in tandoor.",
@@ -96,7 +96,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: "mn-2",
-    name: "Farmers Shahi Paneer",
+    name: "Kitchen369 Shahi Paneer",
     category: "mains",
     price: 360,
     description: "Cubes of fresh paneer cooked in smooth aromatic gravy of melon seeds, cashews & butter.",
@@ -226,9 +226,9 @@ export const MENU_ITEMS: MenuItem[] = [
 ];
 
 export const GALLERY_IMAGES = [
-  { url: "/images/pic4.png", title: "Rooftop Terrace Seating", location: "Surajpur Dine-In", subtitle: "Starlight outdoor dining under ambient festoon lights" },
-  { url: "/images/pic5.png", title: "Cane Lounge Interior", location: "Surajpur Fine Dining", subtitle: "Warm ambient indoor lighting with handcrafted cane furniture" },
-  { url: "/images/pic3.png", title: "VIP Hospitality", location: "Surajpur Outlet", subtitle: "Dedicated servers ensuring royal guest hospitality" },
+  { url: "/images/pic4.png", title: "Rooftop Terrace Seating", location: "Beta 1 Dine-In", subtitle: "Starlight outdoor dining under ambient festoon lights" },
+  { url: "/images/pic5.png", title: "Cane Lounge Interior", location: "Beta 1 Fine Dining", subtitle: "Warm ambient indoor lighting with handcrafted cane furniture" },
+  { url: "/images/pic3.png", title: "VIP Hospitality", location: "Beta 1 Outlet", subtitle: "Dedicated servers ensuring royal guest hospitality" },
   { url: "/images/pic7.png", title: "Grand Culinary Feast", location: "Kitchen Specialty", subtitle: "Full spread of North Indian, Tandoor & Artisan Pizzas" },
   { url: "/images/pic6.png", title: "Rich Handi Curries", location: "Chef Special", subtitle: "Authentic Dal Makhani & Paneer Butter Gravy" },
   { url: "/images/pic1.png", title: "Char-Grilled Kebabs", location: "Tandoor Station", subtitle: "Masterfully roasted Tandoori kebabs with mint dip" },
@@ -241,7 +241,7 @@ export const REVIEWS: Review[] = [
     name: "Rohan Verma",
     rating: 5,
     date: "1 week ago",
-    comment: "The rooftop setup in Surajpur is fantastic! Amazing Dal Makhani and Paneer Tikka. Best family dinner spot in Greater Noida.",
+    comment: "The rooftop setup in Beta 1 is fantastic! Amazing Dal Makhani and Paneer Tikka. Best family dinner spot in Greater Noida.",
     source: "Google Reviews"
   },
   {
@@ -249,7 +249,7 @@ export const REVIEWS: Review[] = [
     name: "Pooja Sharma",
     rating: 5,
     date: "2 weeks ago",
-    comment: "Ordered delivery to Sector 73. Food arrived piping hot within 30 minutes! The garlic naan and boneless butter chicken were perfection.",
+    comment: "Ordered delivery from Alpha 1 hub. Food arrived piping hot within 30 minutes! The garlic naan and boneless butter chicken were perfection.",
     source: "Zomato"
   },
   {
@@ -257,7 +257,7 @@ export const REVIEWS: Review[] = [
     name: "Amitabh Roy",
     rating: 5,
     date: "3 weeks ago",
-    comment: "Celebrated my wife's birthday on the terrace. Staff service was top notch and hospitality was warm. Highly recommend the tandoori platter!",
+    comment: "Celebrated my wife's birthday on the terrace in Beta 1. Staff service was top notch and hospitality was warm. Highly recommend the tandoori platter!",
     source: "Swiggy"
   }
 ];
@@ -274,7 +274,7 @@ export const PITCH_SOLUTIONS = [
   {
     id: "sol-2",
     title: "QR Code Smart Table Ordering",
-    tagline: "Instant Mobile Ordering at Surajpur Rooftop Tables",
+    tagline: "Instant Mobile Ordering at Beta 1 Rooftop Tables",
     description: "Place custom QR stands on each table. Guests scan the QR code to view the live digital menu, add items, and place orders directly to the kitchen display.",
     icon: "QrCode",
     highlight: "Increases table turnover by 35%"

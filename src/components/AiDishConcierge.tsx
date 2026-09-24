@@ -35,13 +35,13 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in">
-      <div className="relative w-full max-w-lg glass-panel p-6 sm:p-8 rounded-3xl border border-[#d4af37]/40 shadow-2xl space-y-6">
+    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
+      <div className="relative w-full max-w-lg bg-white p-6 sm:p-8 rounded-3xl border border-[#FFE4D6] shadow-2xl space-y-6">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-[#1c110d] text-[#c4b5a5] hover:text-white border border-[#5c1600]"
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#FFF5EA] text-[#6E5D53] hover:text-[#2C1810] border border-[#FFD8BE]"
         >
           <X className="w-5 h-5" />
         </button>
@@ -49,12 +49,12 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
         {/* Header */}
         <div className="space-y-1">
           <div className="flex items-center gap-2">
-            <span className="px-3 py-1 rounded-full bg-[#5c1600] text-[#f3e5ab] text-[10px] font-bold border border-[#d4af37]/40 flex items-center gap-1">
-              Smart Concierge
+            <span className="px-3 py-1 rounded-full bg-[#FFF0E5] text-[#D9381E] text-[10px] font-extrabold border border-[#FFC8A8] flex items-center gap-1">
+              <Sparkles className="w-3 h-3 text-[#E65100]" /> Smart Concierge
             </span>
           </div>
-          <h3 className="text-2xl font-extrabold text-[#faf6f0]">Dish Recommender</h3>
-          <p className="text-xs text-[#c4b5a5]">
+          <h3 className="text-2xl font-black text-[#2C1810]">Dish Recommender</h3>
+          <p className="text-xs text-[#6E5D53] font-medium">
             Not sure what to eat? Tell us your taste & mood for instant chef suggestions.
           </p>
         </div>
@@ -63,14 +63,14 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
           <div className="space-y-5">
             {/* Step 1: Diet */}
             <div className="space-y-2">
-              <label className="text-xs font-bold text-[#faf6f0]">1. Dietary Preference</label>
+              <label className="text-xs font-extrabold text-[#2C1810]">1. Dietary Preference</label>
               <div className="grid grid-cols-3 gap-2">
                 <button
                   onClick={() => setDiet('veg')}
                   className={`py-2.5 rounded-xl text-xs font-bold transition-all border ${
                     diet === 'veg'
-                      ? 'bg-[#3e6b48] text-white border-green-400'
-                      : 'bg-[#1c110d] text-[#c4b5a5] border-[#5c1600]'
+                      ? 'bg-[#2E7D32] text-white border-[#2E7D32]'
+                      : 'bg-[#FFF5EA] text-[#6E5D53] border-[#FFD8BE]'
                   }`}
                 >
                   Pure Veg
@@ -79,8 +79,8 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
                   onClick={() => setDiet('nonveg')}
                   className={`py-2.5 rounded-xl text-xs font-bold transition-all border ${
                     diet === 'nonveg'
-                      ? 'bg-[#802000] text-white border-red-500'
-                      : 'bg-[#1c110d] text-[#c4b5a5] border-[#5c1600]'
+                      ? 'bg-[#C0392B] text-white border-[#C0392B]'
+                      : 'bg-[#FFF5EA] text-[#6E5D53] border-[#FFD8BE]'
                   }`}
                 >
                   Non-Veg
@@ -89,8 +89,8 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
                   onClick={() => setDiet('any')}
                   className={`py-2.5 rounded-xl text-xs font-bold transition-all border ${
                     diet === 'any'
-                      ? 'bg-[#5c1600] text-white border-[#d4af37]'
-                      : 'bg-[#1c110d] text-[#c4b5a5] border-[#5c1600]'
+                      ? 'brand-gradient-bg text-white border-orange-300'
+                      : 'bg-[#FFF5EA] text-[#6E5D53] border-[#FFD8BE]'
                   }`}
                 >
                   Anything
@@ -100,7 +100,7 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
 
             {/* Step 2: Spice Level */}
             <div className="space-y-2">
-              <label className="text-xs font-bold text-[#faf6f0]">2. Spice Tolerance</label>
+              <label className="text-xs font-extrabold text-[#2C1810]">2. Spice Tolerance</label>
               <div className="grid grid-cols-3 gap-2">
                 {[
                   { level: 1, label: 'Mild & Creamy' },
@@ -112,8 +112,8 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
                     onClick={() => setSpice(s.level)}
                     className={`py-2.5 rounded-xl text-xs font-bold transition-all border ${
                       spice === s.level
-                        ? 'bg-[#5c1600] text-[#f3e5ab] border-[#d4af37]'
-                        : 'bg-[#1c110d] text-[#c4b5a5] border-[#5c1600]'
+                        ? 'brand-gradient-bg text-white border-orange-300'
+                        : 'bg-[#FFF5EA] text-[#6E5D53] border-[#FFD8BE]'
                     }`}
                   >
                     {s.label}
@@ -124,14 +124,14 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
 
             {/* Step 3: Course */}
             <div className="space-y-2">
-              <label className="text-xs font-bold text-[#faf6f0]">3. Course Preference</label>
+              <label className="text-xs font-extrabold text-[#2C1810]">3. Course Preference</label>
               <div className="grid grid-cols-3 gap-2">
                 <button
                   onClick={() => setMood('starters')}
                   className={`py-2.5 rounded-xl text-xs font-bold transition-all border ${
                     mood === 'starters'
-                      ? 'bg-[#5c1600] text-white border-[#d4af37]'
-                      : 'bg-[#1c110d] text-[#c4b5a5] border-[#5c1600]'
+                      ? 'brand-gradient-bg text-white border-orange-300'
+                      : 'bg-[#FFF5EA] text-[#6E5D53] border-[#FFD8BE]'
                   }`}
                 >
                   Starter / Kebab
@@ -140,8 +140,8 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
                   onClick={() => setMood('mains')}
                   className={`py-2.5 rounded-xl text-xs font-bold transition-all border ${
                     mood === 'mains'
-                      ? 'bg-[#5c1600] text-white border-[#d4af37]'
-                      : 'bg-[#1c110d] text-[#c4b5a5] border-[#5c1600]'
+                      ? 'brand-gradient-bg text-white border-orange-300'
+                      : 'bg-[#FFF5EA] text-[#6E5D53] border-[#FFD8BE]'
                   }`}
                 >
                   Main Curry
@@ -150,8 +150,8 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
                   onClick={() => setMood('pizza')}
                   className={`py-2.5 rounded-xl text-xs font-bold transition-all border ${
                     mood === 'pizza'
-                      ? 'bg-[#5c1600] text-white border-[#d4af37]'
-                      : 'bg-[#1c110d] text-[#c4b5a5] border-[#5c1600]'
+                      ? 'brand-gradient-bg text-white border-orange-300'
+                      : 'bg-[#FFF5EA] text-[#6E5D53] border-[#FFD8BE]'
                   }`}
                 >
                   Pizza & Pasta
@@ -161,7 +161,7 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
 
             <button
               onClick={handleRecommend}
-              className="w-full py-3.5 rounded-2xl brand-gradient-bg text-white text-xs font-bold shadow-lg border border-[#d4af37]/40 hover:brightness-110 transition-all flex items-center justify-center gap-2"
+              className="w-full py-3.5 rounded-2xl brand-gradient-bg text-white text-xs font-extrabold shadow-md hover:brightness-110 transition-all flex items-center justify-center gap-2"
             >
               <span>Get Chef Recommendations</span>
             </button>
@@ -170,10 +170,10 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
           /* Recommended Results */
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-[#d4af37]">Top Recommendations For You:</span>
+              <span className="text-xs font-extrabold text-[#E65100]">Top Recommendations For You:</span>
               <button
                 onClick={() => setRecommendations(null)}
-                className="text-xs text-[#c4b5a5] underline hover:text-white"
+                className="text-xs text-[#6E5D53] underline font-bold hover:text-[#2C1810]"
               >
                 Change Preferences
               </button>
@@ -183,19 +183,19 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
               {recommendations.map((item) => (
                 <div
                   key={item.id}
-                  className="p-3 rounded-2xl bg-[#1c110d] border border-[#d4af37]/20 flex items-center justify-between gap-3"
+                  className="p-3 rounded-2xl bg-[#FFF9F2] border border-[#FFD8BE] flex items-center justify-between gap-3"
                 >
-                  <div className="relative w-14 h-14 rounded-xl overflow-hidden shrink-0">
+                  <div className="relative w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-[#FFF5EA]">
                     <Image src={item.image} alt={item.name} fill className="object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h4 className="text-xs font-bold text-white truncate">{item.name}</h4>
-                    <p className="text-[10px] text-[#c4b5a5] truncate">{item.description}</p>
-                    <span className="text-xs font-extrabold text-[#d4af37]">₹{item.price}</span>
+                    <h4 className="text-xs font-extrabold text-[#2C1810] truncate">{item.name}</h4>
+                    <p className="text-[10px] text-[#6E5D53] truncate font-medium">{item.description}</p>
+                    <span className="text-xs font-black text-[#D9381E]">₹{item.price}</span>
                   </div>
                   <button
                     onClick={() => onAddToCart(item.id)}
-                    className="p-2 rounded-xl brand-gradient-bg text-white hover:scale-105 transition-transform"
+                    className="p-2 rounded-xl brand-gradient-bg text-white hover:scale-105 transition-transform shadow-xs"
                     title="Add to Order"
                   >
                     <Plus className="w-4 h-4" />
@@ -206,7 +206,7 @@ export const AiDishConcierge: React.FC<AiDishConciergeProps> = ({
 
             <button
               onClick={onClose}
-              className="w-full py-3 rounded-2xl bg-[#1c110d] text-[#c4b5a5] text-xs font-bold hover:text-white border border-[#5c1600]"
+              className="w-full py-3 rounded-2xl bg-[#FFF5EA] text-[#2C1810] text-xs font-extrabold hover:bg-[#FFE8D6] border border-[#FFD8BE]"
             >
               Close & View Order
             </button>

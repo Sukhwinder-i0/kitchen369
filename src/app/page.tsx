@@ -45,7 +45,7 @@ export default function Home() {
   const totalCartCount = Object.values(cart).reduce((a, b) => a + b, 0);
 
   return (
-    <main className="min-h-screen bg-[#0d0806] text-[#faf6f0] flex flex-col justify-between">
+    <main className="min-h-screen bg-[#FFFBF5] text-[#2C1810] flex flex-col justify-between">
       
       {/* Header Navigation */}
       <Header
